@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{23D50DE4-AC52-4E95-A6D4-4C2077F36DBE}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TilePlayer</RootNamespace>
+    <AssemblyName>TilePlayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows Phone</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>2d282f96-603f-45d8-a2bc-c8fea11cfe39</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <XapFilename>$(AssemblyName).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
+    <TileImage>app_icon_173x173.png</TileImage>
+    <TileTitle>TilePlayer</TileTitle>
+    <SupportedCultures>
+    </SupportedCultures>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Thumbnail>app_icon_62x62.png</Thumbnail>
+    <XnaRefreshLevel>1</XnaRefreshLevel>
+    <GameStartupType>
+    </GameStartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows Phone\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows Phone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows Phone\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug Trial|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Windows Phone\Debug Trial\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS_PHONE;TRIAL</DefineConstants>
+    <DocumentationFile>bin\Windows Phone\Debug\TilePlayer.XML</DocumentationFile>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Trial|Windows Phone' ">
+    <OutputPath>bin\Windows Phone\Release Trial\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE;TRIAL</DefineConstants>
+    <DocumentationFile>bin\Windows Phone\Release\TilePlayer.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Devices.Sensors, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PlaXore">
+      <HintPath>..\..\..\lib\WindowsPhone\PlaXore.dll</HintPath>
+    </Reference>
+    <Reference Include="PlaXore.GameFramework">
+      <HintPath>..\..\..\lib\WindowsPhone\PlaXore.GameFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="PlaXore.Media">
+      <HintPath>..\..\..\lib\WindowsPhone\PlaXore.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="PlaXore.ShakeGestures">
+      <HintPath>..\..\..\lib\WindowsPhone\PlaXore.ShakeGestures.dll</HintPath>
+    </Reference>
+    <Reference Include="SOMAWP7">
+      <HintPath>..\..\..\..\lib\WindowsPhone\SOMAWP7.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Wizzle.Engine">
+      <HintPath>..\..\..\lib\WindowsPhone\Wizzle.Engine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs" />
+    <Compile Include="AdsManager.cs" />
+    <Compile Include="BuyBox.cs" />
+    <Compile Include="Dashboard.cs" />
+    <Compile Include="GameStateId.cs" />
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="HighScoresBox.cs" />
+    <Compile Include="GameBoard.cs" />
+    <Compile Include="GameInfo.cs" />
+    <Compile Include="LocalGamer.cs" />
+    <Compile Include="WizzleGameHost.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="PublishScoreBox.cs" />
+    <Compile Include="RemoteGameBoard.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DisturbingElement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\AppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <Compile Include="Scorpion.cs" />
+    <Compile Include="LocalGameBoard.cs" />
+    <Compile Include="TileMovedEventArgs.cs" />
+    <Compile Include="Tile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TilePlayerContent\TilePlayerContent.contentproj">
+      <Project>{6379A7DE-A7B5-4212-8E7A-0137FB8250B9}</Project>
+      <Name>TilePlayerContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app_icon_173x173.png" />
+    <Content Include="app_icon_62x62.png" />
+    <Content Include="Properties\WMAppManifest.xml">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMAppManifest.tt</DependentUpon>
+    </Content>
+    <None Include="Properties\WMAppManifest.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WMAppManifest.xml</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

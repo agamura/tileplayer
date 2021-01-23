@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilePlayer", "TilePlayer\TilePlayer.csproj", "{23D50DE4-AC52-4E95-A6D4-4C2077F36DBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilePlayerContent", "TilePlayerContent\TilePlayerContent.contentproj", "{6379A7DE-A7B5-4212-8E7A-0137FB8250B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23D50DE4-AC52-4E95-A6D4-4C2077F36DBE}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{23D50DE4-AC52-4E95-A6D4-4C2077F36DBE}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{23D50DE4-AC52-4E95-A6D4-4C2077F36DBE}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{23D50DE4-AC52-4E95-A6D4-4C2077F36DBE}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{23D50DE4-AC52-4E95-A6D4-4C2077F36DBE}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{23D50DE4-AC52-4E95-A6D4-4C2077F36DBE}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{6379A7DE-A7B5-4212-8E7A-0137FB8250B9}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{6379A7DE-A7B5-4212-8E7A-0137FB8250B9}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
